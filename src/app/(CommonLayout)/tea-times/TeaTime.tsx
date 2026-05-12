@@ -9,6 +9,7 @@ import {
   Trash2
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 const teeTimesData = [
   { id: 1, date: "Sat, Apr 18, 2026", time: "07:00 AM", available: 4, total: 4 },
@@ -31,10 +32,10 @@ const TeaTime = () => {
           <h1 className="text-3xl font-bold text-gray-900">Tee Times</h1>
           <p className="text-gray-500 mt-1">15 total slots across all dates</p>
         </div>
-        <button className="bg-[#142d22] hover:bg-[#1a3a2e] text-white px-6 py-2.5 rounded-xl flex items-center gap-2 transition-all shadow-lg shadow-[#142d22]/20 font-medium">
+        <Link href="/tea-times/add-tea-times" className="bg-[#142d22] hover:bg-[#1a3a2e] text-white px-6 py-2.5 rounded-xl flex items-center gap-2 transition-all shadow-lg shadow-[#142d22]/20 font-medium">
           <Upload className="w-5 h-5" />
           <span>Upload Tee Times</span>
-        </button>
+        </Link>
       </div>
 
       {/* Filter Bar */}

@@ -80,7 +80,6 @@ const Sidebar = () => {
             <Upload className="w-5 h-5" />
             <span>Upload Tee Times</span>
           </div>
-          <div className="absolute bottom-0 left-0 w-full h-1 bg-[#8b5cf6]"></div>
         </button>
       </div>
 

@@ -3,7 +3,7 @@ import { FieldError, UseFormRegister } from "react-hook-form";
 
 type InputFieldProps = {
   name: string;
-  title: string;
+  title?: string;
   placeholder?: string;
   type?: string;
   register: UseFormRegister<any>;
@@ -20,7 +20,7 @@ const InputField = ({
 }: InputFieldProps) => {
   return (
     <div className="space-y-3">
-      <label className="block text-[11px] font-bold tracking-[0.1em] text-[#9CA3AF] uppercase mb-2">{title}</label>
+      {title && <label className="block text-[11px] font-bold tracking-[0.1em] text-[#9CA3AF] uppercase mb-2">{title}</label>}
       <div className="relative group">
         <input
           {...register(name)}
