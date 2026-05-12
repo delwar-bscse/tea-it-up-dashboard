@@ -7,7 +7,8 @@ import {
   Clock,
   ClipboardList,
   Upload,
-  Flag
+  Flag,
+  Edit
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -26,6 +27,11 @@ const menuItems = [
     name: "Requests",
     icon: ClipboardList,
     href: "/requests",
+  },
+  {
+    name: "Edit Club",
+    icon: Edit,
+    href: "/edit-clubs",
   },
 ];
 
